@@ -1,3 +1,7 @@
+[![CocoaPods](https://img.shields.io/cocoapods/p/libPhoneNumber-iOS.svg?style=flat)](http://cocoapods.org/?q=libPhoneNumber-iOS)
+[![CocoaPods](https://img.shields.io/cocoapods/v/libPhoneNumber-iOS.svg?style=flat)](http://cocoapods.org/?q=libPhoneNumber-iOS)
+[![Travis](https://img.shields.io/travis/iziz/libPhoneNumber-iOS.svg?style=flat)](https://travis-ci.org/iziz/libPhoneNumber-iOS)
+
 # **libPhoneNumber for iOS** 
 
  - NBPhoneNumberUtil
@@ -6,7 +10,11 @@
 > ARC only, or add the **"-fobjc-arc"** flag for non-ARC
  
 ### Using [CocoaPods](http://cocoapods.org/?q=libPhoneNumber-iOS)
-> pod 'libPhoneNumber-iOS', '~> 0.7'
+```
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "8.0"
+pod 'libPhoneNumber-iOS', '~> 0.7'
+```
 
 ### Setting up Manually
 ##### Add source files to your projects from libPhoneNumber
@@ -94,9 +102,11 @@ See sample test code from
     NSLog(@"%@", [f inputDigit:@"2"]); // "650 253 2222"
     // Can remove last digit
     NSLog(@"%@", [f removeLastDigit]); // "650 253 222"
+    
+    NSLog(@"%@", [f inputString:@"16502532222"]); // 1 650 253 2222
 ```
 
-##### Visit [libphonenumber](http://code.google.com/p/libphonenumber/) for more information or mail (zen.isis@gmail.com)
+##### Visit [libphonenumber](https://github.com/googlei18n/libphonenumber) for more information or mail (zen.isis@gmail.com)
 
 ##### **Metadata managing (updating metadata)**
 
